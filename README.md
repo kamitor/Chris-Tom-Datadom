@@ -101,6 +101,41 @@ The best infrastructure is the one that **doesn’t need late-night intervention
 ## 📜 Overview  
 Chris & Tom Datadom is a **containerized, modular infrastructure** designed for **secure, scalable, and research-friendly hosting**. It integrates key components for **networking, security, monitoring, data management, and automation** while maintaining **high availability and failover support**.
 
+```mermaid
+graph TD;
+    
+    %% Networking & Routing
+    A1[🌍 Traefik (Reverse Proxy)] -->|Routes Traffic| B1[🖥️ Docker & Kubernetes]
+    A2[🔐 WireGuard (VPN)] -->|Secures Access| A1
+    A3[📡 Bird & BGPalerter (BGP Routing)] -->|Monitors Network| A1
+
+    %% Security & Authentication
+    S1[🔑 Keycloak (SSO & RBAC)] -->|Authenticates Users| A1
+    S2[🔒 Vaultwarden (Secrets Management)] -->|Stores Secrets| S1
+
+    %% Infrastructure & Compute
+    B1 -->|Manages VMs & Containers| B2[🖥️ Proxmox VE (VMs & LXC)]
+    B1 -->|Manages Containers| B3[🔧 Portainer (Docker Management)]
+    
+    %% Storage & Backup
+    B4[💾 Nextcloud (File Sharing)] -->|Stores Data| B5[💾 Restic & BorgBackup (Backups)]
+
+    %% Monitoring & Observability
+    M1[📊 Prometheus (Metrics Collection)] -->|Feeds Data| M2[📈 Grafana (Visualization)]
+    M1 -->|Monitors| M3[🚨 Zabbix (Alerting)]
+    
+    %% Collaboration & Development
+    C1[💬 Mattermost (Team Chat)] -->|Integrates with| C2[📜 Gitea (Git Repositories)]
+    C2 -->|Triggers Builds| C3[⚙️ Drone CI (CI/CD Automation)]
+
+    %% Connections Between Components
+    A1 -->|Routes Requests| B4
+    A1 -->|Routes Requests| C1
+    B1 -->|Supports Compute| C2
+    B4 -->|Stores Research Data| C1
+    M2 -->|Sends Alerts| C1
+```
+
 ---
 
 ## 🌐 Networking & Routing Layer  

@@ -26,10 +26,10 @@ Wij werken aan **Chris & Tom Datadom**, een 100% open-source hostingplatform ger
 
 ## 🔐 **Verantwoord gebruik van het netwerk**  
 Als cololid willen wij **bijdragen aan het verbeteren van het netwerk** en zullen wij:  
-- **Onze infrastructuur open documenteren**, zodat anderen ervan kunnen leren en het kunnen verbeteren.  
-- **Strikte netwerkbeveiliging hanteren**, zonder onnodige blootstelling of slechte configuraties.  
-- **Transparant opereren**, met monitoring en logs om misbruik te voorkomen.  
-- **Actief participeren in de community**, door onze ervaringen en oplossingen te delen met andere leden.  
+- **Onze infrastructuur open documenteren**, zodat anderen ervan kunnen leren en het kunnen verbeteren. Zelfs deze brief is online beschikbaar. 
+- **Strikte netwerkbeveiliging hanteren**, zonder onnodige blootstelling of slechte configuraties, we zullen onze configuraties delen voor review.   
+- **Transparant opereren**, met monitoring en logs om misbruik te voorkomen, wij kunnen onze monitoring software ook beschikbaar stellen op view-basis (zodat jullie met ons mee kunnen kijken). 
+- **Actief participeren in de community**, door onze ervaringen en oplossingen te delen met andere leden, door onze scripts etc ook openbaar te maken. 
 
 ## 🤝 **Ondersteuning en aanbeveling**  
 Omdat een bestaande cololid een basislid moet voordragen, zouden wij graag met een mentor binnen ColoClue in gesprek gaan om onze plannen en aanpak toe te lichten. We geloven dat onze **commitment aan FOSS, zelfhosting en kennisdeling** perfect aansluit bij de missie van ColoClue.  

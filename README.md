@@ -8,9 +8,13 @@ Welcome to **Chris & Tom Datadom**, a self-hosted server project running in an e
 
 We believe in **learning by doing**, **sharing knowledge**, and most importantly—**keeping things running, no matter what**. Whether it's an experiment, a playground for open-source tech, or a fortress of uptime, we've got it covered.  
 
+Allthough this is very impressively worded, it's good to keep in mind that this is basically Chris and Tommy's "play around with" server. 
+Our Ambition is to give people (mainly tommy and Chris's extended family) the ability to do everything with self-hosted FOSS tools. 
+
 ---
 
 ## 🏗️ **What’s Inside the Datadom?**  
+A play ground of tools used for hosting all kinds of software we would want to play around with. 
 
 🖥️ **Self-hosted everything** – Because trusting a cloud is nice, but **being the cloud** is better.  
 🔧 **Built on FOSS** – Proprietary software? Laat maar zitten.  
@@ -23,23 +27,18 @@ We believe in **learning by doing**, **sharing knowledge**, and most importantly
 ## 🚀 **Why Chris & Tom Datadom?**  
 
 ✅ **Built with knowledge & community in mind**  
-Chris & Tom Datadom isn’t just another self-hosted project—it’s an infrastructure designed to **enable learning, collaboration, and real-world experimentation**. Inspired by **VCH-Infra**, we believe that the best way to push innovation forward is to **make powerful tools accessible, document them well, and share knowledge freely**.  
+Chris & Tom Datadom isn’t just another self-hosted project—it’s an infrastructure designed to **enable learning, collaboration, and real-world experimentation**. We believe that the best way to push innovation forward is to **make powerful tools accessible, document them well, and share knowledge freely**.  
 
 ✅ **A research-grade modular infrastructure**  
-Much like **VCH-Infra**, this ecosystem is designed to **streamline research, development, and hosting**, integrating a mix of **virtualization, data analysis, automation, and security tools**. Every component is modular, open-source, and **built to support real-world applications**, whether for **academia, network engineering, or tech-driven research**.  
+This ecosystem is designed to **streamline research, development, and hosting**, integrating a mix of **virtualization, data analysis, automation, and security tools**. Every component is modular, open-source, and **built to support real-world applications**, whether for **academia, network engineering, or tech-driven research**.  
+This tech stack is to be used for Academic Research, Hobby hosting and not for **commercial means. **. That said, we might start a non-profit around it to cover the costs. 
 
 ✅ **Carefully managed infrastructure, not just thrown together**  
 Some people spin up a server and hope for the best. We **plan, optimize, and iterate**.  
 - **Containerized everything** with Docker and Kubernetes for **scalability**.  
-- **Automated provisioning** using Ansible to **reduce manual workload**.  
+- **Automated provisioning** using Ansible to **reduce manual workload** and create reproduceability.  
 - **Real-time monitoring** with Grafana & Prometheus to **catch issues before they escalate**.  
 - **Modular networking setup**, integrating BGP and VPNs for **secure and flexible access**.  
-
-✅ **Reliability that won't ghost you at 2 AM**  
-The best infrastructure is the one that **doesn’t need late-night intervention**. That’s why we **design for uptime and resilience** from day one:  
-- **Load balancing & failover strategies** to keep services running.  
-- **Automated alerts** for rapid troubleshooting.  
-- **Version-controlled deployments** to prevent configuration drift.  
 
 🔍 **We like to say:**  
 *"If you can document it, you can improve it. If you can automate it, even better. If you don’t need to wake up for it, you’ve done it right."*  
@@ -50,7 +49,6 @@ The best infrastructure is the one that **doesn’t need late-night intervention
 
 ### 🛠 **Centralized Tools & Pre-Configured Infrastructure**  
 ✅ **Seamless Access:** Everything is accessible via a **unified interface** with Traefik handling subdomain routing.  
-✅ **Pre-Configured Services:** No need to spend **hours setting up**—we’ve done the hard work.  
 ✅ **Optimized for Research & Innovation:** **Graph data (Neo4j), AI experiments (OpenWebUI), workflow automation (n8n)** all in one ecosystem.  
 
 ### 🤝 **Collaboration at Its Core**  
@@ -100,6 +98,12 @@ The best infrastructure is the one that **doesn’t need late-night intervention
 
 ## 📜 Overview  
 Chris & Tom Datadom is a **containerized, modular infrastructure** designed for **secure, scalable, and research-friendly hosting**. It integrates key components for **networking, security, monitoring, data management, and automation** while maintaining **high availability and failover support**.
+
+
+## The suggested infrastructure
+
+The remainder of this plan is just a suggestion, it is not final yet; however, this gives a good indication of what we want to achieve. 
+
 
 ```mermaid
 graph TD;
@@ -223,21 +227,6 @@ graph TD;
 🔌 **Chris & Tom Datadom – A Secure, Scalable, and Open Research Infrastructure.** 🚀
 
 
-
-## 🌍 **Real-World Examples & Inspiration**  
-
-### **Brightlands Institute for Supply Chain Innovation (BISCI)**  
-- **Location:** Maastricht University, Netherlands.  
-- **Overview:** BISCI develops **smart & sustainable supply chain innovations** by applying the latest research to real-world challenges.  
-
-### **Supply Chain Finance Barometer (PwC & SCF Community)**  
-- **Findings:** Provides deep insights into **the evolution of supply chain finance**, identifying key drivers, challenges, and success factors.  
-
-### **European Open Science Cloud (EOSC)**  
-- **Initiative:** A European Commission effort to build an **integrated research infrastructure** that promotes open science and data sharing.  
-
----
-
 ## 💡 **Why Does This Matter?**  
 
 Academic and research institutions face significant challenges:  
@@ -256,20 +245,14 @@ Chris & Tom Datadom is built to **solve these challenges** by providing:
 
 ## 📜 **Roadmap**  
 
-✔️ **Deploy core services & test resiliency** 🛠️  
-✔️ **Ensure solid networking & failover strategies** 📡  
+🚧 **Deploy core services & test resiliency** 🛠️  
+🚧 **Ensure solid networking & failover strategies** 📡  
 🚧 **Fine-tune automation & monitoring** 🤖  
 🚧 **Share insights & best practices with the community** 💡  
 🚧 **Expand functionality while keeping things **lean & efficient** 🏗️  
 
 ---
 
-## 🏰 **Join the Datadom!**  
-
-Want to contribute, collaborate, or just debate **the best way to structure VLANs?**  
-We're always happy to **share insights**, **exchange ideas**, and **keep things running smoothly**.  
-
-🔌 **Chris & Tom Datadom – Built for those who care about their infrastructure.**  
 
 
 

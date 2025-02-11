@@ -47,3 +47,27 @@ Want to contribute, collaborate, or just debate **the best way to structure VLAN
 We're always happy to **share insights**, **exchange ideas**, and **keep things running smoothly**.  
 
 🔌 **Chris & Tom Datadom – Built for those who care about their infrastructure.**  
+
+
+
+| **Tool**          | **Purpose**                                      | **GitHub** |
+|-------------------|-------------------------------------------------|-----------|
+| **Proxmox VE**   | Virtualization & container management           | [🔗 Proxmox](https://github.com/proxmox) |
+| **Ansible**      | Automated server provisioning & configuration   | [🔗 Ansible](https://github.com/ansible/ansible) |
+| **Docker**       | Containerized application deployment            | [🔗 Docker](https://github.com/moby/moby) |
+| **Portainer**    | Web-based UI for managing Docker & Kubernetes   | [🔗 Portainer](https://github.com/portainer/portainer) |
+| **Grafana**      | Monitoring & visualization for infrastructure   | [🔗 Grafana](https://github.com/grafana/grafana) |
+| **Prometheus**   | Time-series database for metrics & alerting     | [🔗 Prometheus](https://github.com/prometheus/prometheus) |
+| **Zabbix**       | Enterprise-grade monitoring solution            | [🔗 Zabbix](https://github.com/zabbix/zabbix) |
+| **WireGuard**    | Fast, modern VPN for secure networking          | [🔗 WireGuard](https://github.com/WireGuard) |
+| **BGPalerter**   | Monitoring & alerting for BGP network changes  | [🔗 BGPalerter](https://github.com/nttgin/BGPalerter) |
+| **Bird**         | Open-source BGP routing daemon                  | [🔗 Bird](https://github.com/BIRD/bird) |
+| **Vaultwarden**  | Self-hosted password management                 | [🔗 Vaultwarden](https://github.com/dani-garcia/vaultwarden) |
+| **Keycloak**     | Identity & access management                    | [🔗 Keycloak](https://github.com/keycloak/keycloak) |
+| **Nextcloud**    | Self-hosted cloud storage & collaboration       | [🔗 Nextcloud](https://github.com/nextcloud/server) |
+| **Gitea**        | Self-hosted Git repository service              | [🔗 Gitea](https://github.com/go-gitea/gitea) |
+| **Caddy**        | Automated HTTPS & reverse proxy                 | [🔗 Caddy](https://github.com/caddyserver/caddy) |
+| **Traefik**      | Cloud-native reverse proxy & load balancer      | [🔗 Traefik](https://github.com/traefik/traefik) |
+| **Pi-hole**      | Network-wide ad blocking & DNS filtering        | [🔗 Pi-hole](https://github.com/pi-hole/pi-hole) |
+| **Unbound**      | DNS resolver for privacy & security             | [🔗 Unbound](https://github.com/NLnetLabs/unbound) |
+

@@ -96,6 +96,99 @@ The best infrastructure is the one that **doesn’t need late-night intervention
 
 ---
 
+# 🏗️ Chris & Tom Datadom - Technical Architecture Overview  
+
+## 📜 Overview  
+Chris & Tom Datadom is a **containerized, modular infrastructure** designed for **secure, scalable, and research-friendly hosting**. It integrates key components for **networking, security, monitoring, data management, and automation** while maintaining **high availability and failover support**.
+
+---
+
+## 🌐 Networking & Routing Layer  
+- **Traefik** – Acts as the main **reverse proxy**, handling SSL termination, subdomain routing, and load balancing.  
+- **WireGuard** – Provides secure VPN access for admins and users requiring private network access.  
+- **Bird & BGPalerter** – Manages **BGP routing** and alerts for network anomalies.  
+
+**🔀 Flow:**  
+1. Incoming requests hit **Traefik**, which directs traffic based on predefined **routing rules**.  
+2. If a service requires VPN access, **WireGuard tunnels** are used.  
+3. External traffic routing is **monitored & optimized** via **Bird & BGPalerter**.  
+
+---
+
+## 🔐 Security & Authentication Layer  
+- **Keycloak** – Provides **SSO authentication, OAuth, and RBAC**.  
+- **Vaultwarden** – Manages **secrets and credentials** for infrastructure security.  
+- **2FA Enforcement** – Enabled for admin & sensitive services.  
+
+**🔀 Flow:**  
+1. Users authenticate via **Keycloak** (OAuth, SAML, or LDAP).  
+2. Role-Based Access Control (RBAC) ensures **least privilege access**.  
+3. Secrets (API keys, credentials) are stored in **Vaultwarden**.  
+
+---
+
+## 📡 Infrastructure & Compute Layer  
+- **Proxmox VE** – Manages **VMs and LXC containers** for high-efficiency workloads.  
+- **Docker & Kubernetes** – Used for **container orchestration** and service deployment.  
+- **Portainer** – Provides a **web UI for managing Docker containers**.  
+
+**🔀 Flow:**  
+1. Virtual machines and containers are deployed via **Proxmox**.  
+2. Containers run within **Docker/Kubernetes**, managed via **Portainer**.  
+3. **Traefik routes** requests to the correct **containers/VMs**.  
+
+---
+
+## 💾 Storage & Backup Layer  
+- **Nextcloud** – Provides **self-hosted file sharing & collaboration**.  
+- **Restic & BorgBackup** – Automated, **encrypted backups** for data security.  
+
+**🔀 Flow:**  
+1. Data stored in **Nextcloud** for secure sharing.  
+2. Scheduled **incremental backups** handled via **Restic & BorgBackup**.  
+3. Off-site backups ensure **disaster recovery** capability.  
+
+---
+
+## 📊 Monitoring & Observability Layer  
+- **Prometheus** – Collects **metrics from infrastructure components**.  
+- **Grafana** – Provides **real-time visualization & dashboards**.  
+- **Zabbix** – Enterprise-grade monitoring & alerts for **server health**.  
+
+**🔀 Flow:**  
+1. **Prometheus scrapes metrics** from all active services.  
+2. **Grafana visualizes data** for insights into server health & network performance.  
+3. **Zabbix provides alerts** for anomalies & failures.  
+
+---
+
+## 🤝 Collaboration & Development Layer  
+- **Mattermost** – Self-hosted, secure messaging & team collaboration.  
+- **Gitea** – Lightweight, self-hosted **Git repository service**.  
+- **Drone CI** – **CI/CD automation** for software deployment.  
+
+**🔀 Flow:**  
+1. Developers push code to **Gitea**, triggering **Drone CI** pipelines.  
+2. Teams communicate through **Mattermost**.  
+3. Automated builds & deployments are managed through **Drone CI**.  
+
+---
+
+## **📜 Summary: End-to-End Workflow**  
+1️⃣ **A request** enters through **Traefik**, determining **public/private access**.  
+2️⃣ **Users authenticate** via **Keycloak** for **SSO & RBAC enforcement**.  
+3️⃣ **Traffic is routed** to the correct **VM, container, or service**.  
+4️⃣ **Compute resources** (Proxmox, Docker, Kubernetes) process the request.  
+5️⃣ **Storage & backups** are securely managed via **Nextcloud & BorgBackup**.  
+6️⃣ **Monitoring & alerts** via **Prometheus, Grafana, Zabbix** ensure system health.  
+7️⃣ **Collaboration & development** tools (Mattermost, Gitea, Drone CI) support workflow.  
+
+---
+
+🔌 **Chris & Tom Datadom – A Secure, Scalable, and Open Research Infrastructure.** 🚀
+
+
+
 ## 🌍 **Real-World Examples & Inspiration**  
 
 ### **Brightlands Institute for Supply Chain Innovation (BISCI)**  

@@ -105,28 +105,28 @@ Chris & Tom Datadom is a **containerized, modular infrastructure** designed for 
 graph TD;
 
     %% Networking & Routing
-    A1[Traefik (Reverse Proxy)] -->|Routes Traffic| B1[Docker & Kubernetes]
-    A2[WireGuard (VPN)] -->|Secures Access| A1
-    A3[Bird & BGPalerter (BGP Routing)] -->|Monitors Network| A1
+    A1[Traefik Reverse Proxy] -->|Routes Traffic| B1[Docker and Kubernetes]
+    A2[WireGuard VPN] -->|Secures Access| A1
+    A3[Bird and BGPalerter] -->|Monitors Network| A1
 
     %% Security & Authentication
-    S1[Keycloak (SSO & RBAC)] -->|Authenticates Users| A1
-    S2[Vaultwarden (Secrets Management)] -->|Stores Secrets| S1
+    S1[Keycloak SSO and RBAC] -->|Authenticates Users| A1
+    S2[Vaultwarden Secrets Management] -->|Stores Secrets| S1
 
     %% Infrastructure & Compute
-    B1 -->|Manages VMs & Containers| B2[Proxmox VE (VMs & LXC)]
-    B1 -->|Manages Containers| B3[Portainer (Docker Management)]
+    B1 -->|Manages VMs and Containers| B2[Proxmox VE]
+    B1 -->|Manages Containers| B3[Portainer]
     
     %% Storage & Backup
-    B4[Nextcloud (File Sharing)] -->|Stores Data| B5[Restic & BorgBackup (Backups)]
+    B4[Nextcloud File Sharing] -->|Stores Data| B5[Restic and BorgBackup]
 
     %% Monitoring & Observability
-    M1[Prometheus (Metrics Collection)] -->|Feeds Data| M2[Grafana (Visualization)]
-    M1 -->|Monitors| M3[Zabbix (Alerting)]
+    M1[Prometheus Metrics Collection] -->|Feeds Data| M2[Grafana Visualization]
+    M1 -->|Monitors| M3[Zabbix Alerting]
     
     %% Collaboration & Development
-    C1[Mattermost (Team Chat)] -->|Integrates with| C2[Gitea (Git Repositories)]
-    C2 -->|Triggers Builds| C3[Drone CI (CI/CD Automation)]
+    C1[Mattermost Team Chat] -->|Integrates with| C2[Gitea Git Repositories]
+    C2 -->|Triggers Builds| C3[Drone CI Automation]
 
     %% Connections Between Components
     A1 -->|Routes Requests| B4
